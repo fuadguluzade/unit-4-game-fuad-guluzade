@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Crystals Collector</h1>
+    </header>
+
+    <div class="container">
+        <div class="rules">
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking ona a crystal you will add a specific amount of points to your
+                total score.</p>
+            <p>You win the game by matching you total score to random number, you lose the game if your total score goes
+                above the random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, he game will change the values of each crystal.</p>
+        </div>
+
+        <div class="gamePanel">
+
+            <div class="scoreTable">
+                <h3 id="message">You lost!</h3>
+                <h1 class="green-color">Wins: <span id="wins">0</span></h1>
+                <h1 class="red-color">Loses: <span id="loses">0</span></h1>
+            </div>
+
+            <div class="crystals">
+                <img class="crystal" id="c1" src="./assets/images/r.jpg" alt="red">
+                <img class="crystal" id="c2" src="./assets/images/b.jpg" alt="blue">
+                <img class="crystal" id="c3" src="./assets/images/s.jpg" alt="yellow">
+                <img class="crystal" id="c4" src="./assets/images/z.jpg" alt="green">
+            </div>
+
+            <div class="score">
+                <div class="goal">Target score:
+                    <h2 id="goalScore"></h2>
+                </div>
+                <div class="total">
+                    Your total score is:
+                    <h2 id="totalScore"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
