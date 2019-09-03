@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Crystals Collector</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
@@ -19,7 +19,8 @@
     </header>
 
     <div class="container">
-        <div class="rules">
+        <div class="rules bordered">
+            <p class="head">GAME RULES</p>
             <p>You will be given a random number at the start of the game.</p>
             <p>There are four crystals below. By clicking ona a crystal you will add a specific amount of points to your
                 total score.</p>
@@ -32,9 +33,16 @@
         <div class="gamePanel">
 
             <div class="scoreTable">
-                <h3 id="message">You lost!</h3>
-                <h1 class="green-color">Wins: <span id="wins">0</span></h1>
-                <h1 class="red-color">Loses: <span id="loses">0</span></h1>
+                <h3 id="message"></h3>
+                <div class="win bordered">
+                    <h1 class="green-color head">Wins:</h1>
+                    <h1 id="wins" class="green-color">0</h1>
+                </div>
+                <div class="lost bordered">
+                    <h1 class="red-color head">Loses:</h1>
+                    <h1 id="loses" class="red-color">0</h1>
+                </div>
+
             </div>
 
             <div class="crystals">
@@ -45,11 +53,12 @@
             </div>
 
             <div class="score">
-                <div class="goal">Target score:
+                <div class="goal bordered">
+                    <h2 class="head">Target score:</h2>
                     <h2 id="goalScore"></h2>
                 </div>
-                <div class="total">
-                    Your total score is:
+                <div class="total bordered">
+                    <h2 class="head">Your total score is:</h2>
                     <h2 id="totalScore"></h2>
                 </div>
             </div>

@@ -24,17 +24,31 @@ header {
     float: left;
     max-width: 500px;
     max-height: 400px;
-    padding: 5px;
+    text-align: center;
 }
 
 .gamePanel {
     float: right;
 }
 
+.win {
+    text-align: center;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.lost {
+    text-align: center;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
 .crystals {
     background-color: lightblue;
     padding: 5px;
     line-height: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .crystal {
@@ -58,6 +72,7 @@ header {
 }
 
 .goal {
+    width: 40%;
     float: left;
     text-align: center;
 
@@ -68,6 +83,7 @@ header {
 }
 
 .total {
+    width: 40%;
     float: right;
     text-align: center;
     
@@ -75,4 +91,21 @@ header {
 
 #totalScore {
     font-size: 32px;
+}
+
+.head {
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    text-align: center'
+}
+
+.bordered {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
